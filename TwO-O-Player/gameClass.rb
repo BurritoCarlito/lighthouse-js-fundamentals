@@ -37,7 +37,7 @@ end
       puts "YES! You are correct."
       puts "P1: #{@player1.lives}/3 vs P2:#{@player2.lives}/3"
     else 
-      puts "Seriousl? No."
+      puts "Seriously? No. Lost a life."
       @current_player.lives -= 1
       puts "P1: #{@player1.lives}/3 vs P2:#{@player2.lives}/3"
   end
