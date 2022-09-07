@@ -32,8 +32,7 @@ end
     # gets the other player's input
     answer = gets.chomp
 
-    # logic to answer question
-
+    # logic to answer question and score message
     if answer.to_i == question_answer.to_i
       puts "YES! You are correct."
       puts "P1: #{@player1.lives}/3 vs P2:#{@player2.lives}/3"
@@ -55,8 +54,10 @@ end
     generate_question
   end
 
+  # logic if game ends due to a player reaching 0
   puts "#{@current_player.name} wins with a score of #{@current_player.lives}/3"
   puts "----- GAME OVER -----"
+  puts "Good Bye!"
   end
 end
   
