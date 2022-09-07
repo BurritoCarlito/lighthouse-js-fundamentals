@@ -9,7 +9,8 @@ class Game
   end
 
   def change_of_player
-    @current_player = if @current_player == @player1
+    @current_player = 
+    if @current_player == @player1
       @player2
     else
       @player1
@@ -55,7 +56,7 @@ end
   end
 
   # logic if game ends due to a player reaching 0
-  puts "#{@current_player.name} wins with a score of #{@current_player.lives}/3"
+  puts "#{@current_player.name} wins with a score of #{@current_player.lives}/3. Congratulations!"
   puts "----- GAME OVER -----"
   puts "Good Bye!"
   end
